@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  zoom: 1.5;
+
+  width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: rgb(255, 255, 255);
+  padding: 15px 45px;
+}
+
+@media (max-width: 500px) {
+  body {
+    zoom: normal;
+    width: auto;
+  }
+}
+
+.header {
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+}
+
+.form {
+  display: flex;
+  justify-content: left;
+  margin-top: 25px;
+}
+
+.form input {
+  font-size: large;
+  width: 900px;
+  height: 30px;
+  background: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: rgb(213, 219, 216) solid 1px;
+  outline: 0px;
+}
+
+.content {
+  margin-top: 45px;
+  max-width: 700px;
+  float: left;
+  align-items: center;
+}
+
+.card-conteiner {
+  width: 250px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 20px 2px 115px -14px black;
+  float: left;
+  border-right: black solid 3px;
+}
+
+@media (max-width: 500px) {
+  .card-conteiner {
+    width: 250px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 20px 2px 115px -14px black;
+    float: left;
+    border-left: black solid 3px;
+    border-right: none;
+  }
+}
+
+.result-items-img {
+  width: 248px;
+  height: 80%;
+}
+
+@media (max-width: 500px) {
+  .card-conteiner {
+    width: 100%;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 20px 2px 115px -14px black;
+    float: left;
+    border-left: black solid 3px;
+    border-right: none;
+  }
+
+  .result-items-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.result-info {
+  width: 100%;
+  height: 18.3%;
+}
+
+.result-item-title {
+  margin: 0px 0px 0px 7px;
+  font-size: 14px;
+}
+
+.result-item-year {
+  font-size: 10px;
+}
+
+.result-item-info {
+  display: flex;
+  width: 100%;
+}
+
+.info-conteiner-title {
+  margin: 0px 0px 0px 7px;
+}
+
+.info-conteiner-subtitle {
+  color: rgb(158, 55, 255);
+  margin: 0px 0px 0px 7px;
+  font-size: 14px;
+  display: flex;
+}
+
+.info-conteiner-subtitle2 {
+  margin: 10px 0px 0px 7px;
+  font-size: 14px;
+  display: flex;
+}
+
+.director {
+  margin-left: 5px;
+}
+
+.rated {
+  margin: 5px 0px 0px 7px;
+  font-size: 12px;
+}
+
+.genre {
+  margin: 3px 0px 0px 7px;
+}
+
+.duration {
+  padding: 2px;
+  border: solid 1px;
+  border-radius: 4px;
+}
+
+.info-conteiner {
+  padding: 10px;
+  width: 450px;
+  height: 400px;
+  background-color: rgb(24, 24, 24);
+  color: rgb(255, 255, 255);
+  border-left: black solid 3px;
+  border-radius: 1px;
+  box-shadow: 50px 2px 115px -14px black;
+  margin-bottom: 25px;
+  float: left;
+}
+
+@media (max-width: 500px) {
+  .info-conteiner {
+    padding: 10px;
+    width: 100%;
+    height: 470px;
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+    border-radius: 1px;
+    box-shadow: 50px 2px 115px -14px black;
+    border-top: black solid 3px;
+    margin-bottom: 25px;
+    float: left;
+  }
+}
+
+.plot-conteiner {
+  font-size: 14px;
+  margin-top: 25px;
+  margin-left: 7px;
+  width: 95%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.actors {
+  margin-top: 20px;
+  margin-left: 7px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.rating-conteiner {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 7px;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .rating-conteiner {
+    display: grid;
+    margin-top: 15px;
+    margin-left: 7px;
+    justify-content: start;
+  }
+}
+.imdb {
+  font-size: 14px;
+  color: rgb(245, 143, 10);
+}
+
+.imdb-rating {
+  font-size: 30px;
+  margin: 0px 0px 10px 7px;
+}
+
+@media (max-width: 500px) {
+  .imdb-rating {
+    font-size: 30px;
+    margin: 0px;
+  }
+}
+
+.button2 {
+  color: #eb4848;
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #e91f1f;
+  margin: 0px 0px 25px 170px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.15s;
+}
+.button2:hover {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+@media (max-width: 500px) {
+  .button2 {
+    margin: 0px;
+  }
+}

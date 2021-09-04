@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script async src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Movies Card</title>
+  </head>
+  <body>
+    <header class="header">Movies Card 1.0</header>
+
+    <form class="form">
+      <input
+        type="text"
+        class="search-input"
+        name="buscar"
+        placeholder="Busca una pelicula..."
+        autocomplete="off"
+      />
+    </form>
+
+    <div class="content">
+      <div class="results"></div>
+    </div>
+
+    <template id="result-card-template">
+      <div class="card-conteiner">
+        <img src="" alt="" class="result-items-img" />
+        <div class="result-info">
+          <h3 class="result-item-title"></h3>
+        </div>
+      </div>
+
+      <div class="info-conteiner">
+        <h2 class="info-conteiner-title"></h2>
+        <div class="info-conteiner-subtitle">
+          <div class="year"></div>
+          <div class="director"></div>
+        </div>
+
+        <div class="info-conteiner-subtitle2">
+          <div class="duration"></div>
+          <div class="rated"></div>
+          <div class="genre"></div>
+        </div>
+
+        <div class="plot-conteiner">
+          <div class="plot"></div>
+        </div>
+
+        <div class="actors"></div>
+        <div class="rating-conteiner">
+          <div class="imdb">IMDB</div>
+          <div class="imdb-rating"></div>
+          <a target="_blank" href="" class="button2">Trailer</a>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
