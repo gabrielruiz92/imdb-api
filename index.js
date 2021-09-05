@@ -5,7 +5,7 @@ function getMovies(moviesearch) {
     axios.get(api + moviesearch)
         .then(function (response) {
             let movies = response.data.Search;
-            console.log(movies);
+            
 
             for (const r of movies) {
 
@@ -25,7 +25,7 @@ function getMovie(id) {
         .then(function (response) {
             let movie = response.data;
 
-            console.log(movie);
+            
 
 
             const imgEL = templateCard.content.querySelector(".result-items-img");
